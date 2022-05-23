@@ -5,4 +5,6 @@ const router = Router();
 
 router.post("/create",controllers.createMessage);
 
+router.get("/id/:id", controllers.viewSingleMessage);
+
 export default router;

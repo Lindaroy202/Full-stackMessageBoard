@@ -10,7 +10,7 @@ const MessageSchema = new mongoose.Schema({
     last_edited: Date,
   },
   category: { type: String, enum: ["Comments", "Questions","Announcements"] },
-  deleted: Boolean,
+  deleted: {type:Boolean, default: false}
 });
 
 const Message = mongoose.model("Message", MessageSchema);
